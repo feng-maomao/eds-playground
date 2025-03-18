@@ -141,7 +141,7 @@ body.workbook main a {
   text-decoration: underline blue;
 }
 
-a:hover {
+body.workbook main a:hover {
   text-decoration: underline;
   color: var(--link-hover-color);
 }
@@ -261,13 +261,13 @@ img {
   height: auto;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
   main .section {
     padding: 64px 32px;
   }
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   :root {
     --heading-font-size-xxl: 40px;
     --heading-font-size-xl: 36px;
