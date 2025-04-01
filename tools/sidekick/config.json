@@ -7,6 +7,15 @@
             "environments": ["edit"],
             "url": "/tools/sidekick/library.html",
             "includePaths": ["**.docx**"]
-        }
+        },
+            {
+                "id": "aem-genai-variations",
+                "titleI18n": {
+                    "en": "Generate with AI"
+                },
+                "environments": ["preview"],
+                "includePaths": ["**.docx**"],
+                "event": "aem-genai-variations-sidekick"
+            }
     ]
 }
