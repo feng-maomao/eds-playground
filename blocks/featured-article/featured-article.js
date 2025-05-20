@@ -30,6 +30,7 @@ function getMetadata(name, doc = document) {
  * @param {HTMLElement} $block The header block element
  */
 export default async function decorate($block) {
+  console.log('featured-article raw html', $block.innerHTML);
   const link = $block.querySelector('a');
   const path = link ? link.getAttribute('href') : $block.textContent.trim();
   const doc = await loadFragment(path);
